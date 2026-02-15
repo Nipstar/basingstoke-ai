@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: AI Automation Basingstoke satellite site\n\n- Basingstoke-specific branding and content\n- Unique copy throughout to avoid duplicate content penalties\n- SEO optimized for Basingstoke, Tadley, Overton, Whitchurch, Hook, Old Basing, Kingsclere\n- JSON-LD structured data with Basingstoke geo coordinates \\(51.2667, -1.0876\\)\n- Cross-links to Hampshire satellite network\n- Contact form with Basingstoke tracking\n- 16 unique FAQ answers with Basingstoke context\n- Local landmarks referenced: Festival Place, Basing View business district\n- Business vibe: Major commercial hub with corporate offices and SME economy\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
     ]
   }
 }
