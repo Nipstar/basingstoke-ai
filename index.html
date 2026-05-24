@@ -225,6 +225,38 @@
           "@type": "Answer",
           "text": "AI Automation Basingstoke is the Basingstoke arm of Antek Automation, a UK-wide AI automation agency based in Andover, Hampshire. We're a Certified Retell AI Partner delivering the same enterprise-grade technology with dedicated focus on Basingstoke and Hampshire businesses."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer business process review and automation support in Basingstoke?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — business process review and automation is one of our core engagements for Basingstoke businesses. We map your existing workflows in a half-day session, identify the highest-ROI automation candidates, produce a costed plan, then build and run the automations. Typical first-month ROI on the review itself."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of M3-corridor Basingstoke businesses do you work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mostly SMEs and professional firms in the supplier ecosystem around Basingstoke's corporate HQ base (Mars, Sun Life Financial, AA, Eli Lilly, Sony, Motorola) plus growing Basingstoke trades and service businesses. The common thread is volume of repetitive admin alongside need for compliance-respecting automation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you automate the business processes feeding enterprise customers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — that's where most of our Basingstoke automation work lives. Supplier onboarding, document verification, quote-to-invoice flows, compliance reporting, audit trails. We build to your enterprise customer's procurement and security baseline, not your own."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is AI automation in Basingstoke different from generic AI tools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generic AI tools give you a chat box. We integrate the AI into the workflow that actually does the work. Basingstoke AI automation means an agent that doesn't just answer the question, but takes the next action — books the appointment, sends the quote, opens the ticket, syncs the CRM."
+        }
       }
     ]
   }
@@ -1538,6 +1570,59 @@
       .stat { padding: 20px 12px; }
       .stat__label { font-size: 0.78rem; }
     }
+  
+    /* ── BUSINESS PROCESS AUTOMATION SECTION ────────────── */
+    .bpa {
+      padding: 96px 0;
+      background: var(--bg-primary);
+      position: relative;
+    }
+    .bpa__head {
+      max-width: 820px;
+      margin: 0 auto 56px;
+      text-align: center;
+    }
+    .bpa__label {
+      display: inline-block;
+      font-size: 0.78rem;
+      color: var(--accent-secondary);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 14px;
+    }
+    .bpa__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .bpa__card {
+      background: rgba(26, 31, 46, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+    .bpa__card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(59, 130, 246, 0.3);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+    }
+    .bpa__card h3 {
+      font-size: 1.15rem;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+    .bpa__card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    @media (max-width: 768px) {
+      .bpa__grid { grid-template-columns: 1fr; }
+      .bpa { padding: 64px 0; }
+    }
   </style>
 </head>
 
@@ -1985,6 +2070,36 @@
       </div>
     </section>
 
+    <!-- ═══ BUSINESS PROCESS AUTOMATION (Basingstoke) ═══ -->
+    <section class="bpa" id="business-process-automation">
+      <div class="container">
+        <div class="bpa__head reveal">
+          <span class="bpa__label">Business Process Review + Automation</span>
+          <h2>Business process automation support for Basingstoke businesses</h2>
+          <p class="section-subtitle">We provide business process review and automation support for Basingstoke companies — particularly the supplier SMEs and professional firms serving the M3 corridor corporate base (Mars, Sun Life Financial, AA, Eli Lilly, Sony, Motorola). Map the process. Identify the AI + automation gains. Build it. Run it. Tweak it.</p>
+        </div>
+        <div class="bpa__grid">
+          <article class="bpa__card reveal">
+            <h3>Business process review for Basingstoke SMEs</h3>
+            <p>We sit with you for half a day, map your real workflows on a whiteboard (or Miro), identify which steps are repetitive enough to automate and which need human judgement, and produce a costed delivery plan. Most Basingstoke SMEs find 10-20 hours/week of admin that can move to AI inside the first review.</p>
+          </article>
+          <article class="bpa__card reveal">
+            <h3>Built for the M3 corridor</h3>
+            <p>Basingstoke sits at the centre of the M3 corridor — easy reach to corporate procurement, professional services HQs, and the supplier ecosystem feeding them. Our automation deployments respect the compliance, audit, and reporting demands that come with serving enterprise clients.</p>
+          </article>
+          <article class="bpa__card reveal">
+            <h3>What we automate for Basingstoke businesses</h3>
+            <p>Lead intake and triage. Quote generation and approvals. Supplier onboarding and verification. Invoice automation and accounts handoff. CRM hygiene (deduplication, enrichment, lifecycle stages). Customer-service ticket routing. Reporting and dashboarding. Plus the AI voice agent on top — the front door to most of these flows.</p>
+          </article>
+          <article class="bpa__card reveal">
+            <h3>Stack we use</h3>
+            <p>n8n (workflow orchestration), custom-LLM agents (decision points), Retell (voice), your existing tools (HubSpot, Pipedrive, Salesforce, Xero, QuickBooks, Microsoft 365, Google Workspace, ServiceNow, Jira). We integrate with what you have — no replatforming required.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
     <!-- ═══ FAQ ═══ -->
     <section class="faq" id="faq">
       <div class="container">
@@ -2105,6 +2220,35 @@
               <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
             <div class="faq__answer"><div class="faq__answer-inner">AI Automation Basingstoke is the Basingstoke arm of Antek Automation, a UK-wide AI automation agency based in Andover, Hampshire. We're a Certified Retell AI Partner delivering the same enterprise-grade technology with dedicated focus on Basingstoke and Hampshire businesses.</div></div>
+          </div>
+        
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              Do you offer business process review and automation support in Basingstoke?
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer"><div class="faq__answer-inner">Yes — business process review and automation is one of our core engagements for Basingstoke businesses. We map your existing workflows in a half-day session, identify the highest-ROI automation candidates, produce a costed plan, then build and run the automations. Typical first-month ROI on the review itself.</div></div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              What kind of M3-corridor Basingstoke businesses do you work with?
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer"><div class="faq__answer-inner">Mostly SMEs and professional firms in the supplier ecosystem around Basingstoke's corporate HQ base (Mars, Sun Life Financial, AA, Eli Lilly, Sony, Motorola) plus growing Basingstoke trades and service businesses. The common thread is volume of repetitive admin alongside need for compliance-respecting automation.</div></div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              Can you automate the business processes feeding enterprise customers?
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer"><div class="faq__answer-inner">Yes — that's where most of our Basingstoke automation work lives. Supplier onboarding, document verification, quote-to-invoice flows, compliance reporting, audit trails. We build to your enterprise customer's procurement and security baseline, not your own.</div></div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              How is AI automation in Basingstoke different from generic AI tools?
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer"><div class="faq__answer-inner">Generic AI tools give you a chat box. We integrate the AI into the workflow that actually does the work. Basingstoke AI automation means an agent that doesn't just answer the question, but takes the next action — books the appointment, sends the quote, opens the ticket, syncs the CRM.</div></div>
           </div>
         </div>
       </div>
